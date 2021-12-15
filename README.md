@@ -10,7 +10,7 @@ The following information leakage proof-of-concept works on various Windows vers
 
 This Windows kernel address leakage proof-of-concept demonstrates how the user-mode mapped DesktopHeap on Windows 1607 x64 bit can be used to leak various kernel addresses via undocumented kernel data structures and undocumented members.
 
-![desktop heap leakage](https://github.com/FULLSHADE/LEAKYDRIPPER/blob/master/images/DesktopHeapLeak.png)
+![desktop heap leakage](/images/DesktopHeapLeak.png)
 
 ### Resources
 
@@ -29,4 +29,4 @@ With the Windows 10 1703 update in 2016, `ulClientDelta` from `Win32ClientInfo` 
 
 This is the classic and easiest technique for bypassing KASRL using the EnumDeviceDrivers winAPI function to get the base address of ntoskrnl, this technique works on pretty much every Windows version. But it requires at least medium-integrity execution. 
 
-![desktop heap leakage](https://github.com/FULLSHADE/LEAKYDRIPPER/blob/master/images/EnumDeviceDrivers.PNG)
+![desktop heap leakage](/images/EnumDeviceDrivers.PNG)
